@@ -4,7 +4,6 @@ import CustomButton from './CustomButton'
 
 const Hero = () => {
     const handleScroll = () => {
-
     }
   return (
     <div className='hero'>
@@ -13,7 +12,7 @@ const Hero = () => {
             Find, book, or rent a car -- quickly and easily!
          </h1>
          <p className="hero__subtitle">
-            Streamline your car rental expierence with our effortless booking process
+            Streamline your car rental expierence with our efforless booking process
          </p>
 
          <CustomButton
@@ -24,9 +23,12 @@ const Hero = () => {
         </div>
         <div className="hero__image-container">
             <div className="hero__image">
-                
+                <Image src='/hero.png' alt='hero'
+                fill className='object-contain' />
+
+                <div className='hero__image-overlay' />
+                </div>
             </div>
-        </div>
     </div>
   )
 }
